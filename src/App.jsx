@@ -79,7 +79,9 @@ function App() {
         handleEdit={handleEdit}  
         isEditing={isEditing} 
         setIsEditing={setIsEditing}/>
-      <Preview content={content}/>
+      <Preview 
+        isEditing={isEditing}
+        content={content}/>
     </div>
   )
 }
